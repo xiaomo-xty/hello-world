@@ -6,7 +6,13 @@
 <head>
 <body>
 	<form action="" method="post" autocomplete="on">
+	简单头像设置：
+	<input type="hidden" name="MAX_FILE_SIZE" value="1024">
+
+	<label><input type="file" accept="image/*" multiple></label>
+	<br><br>
 	<label for="username">用户名：<input type="text" name="username" id="username" autofocus><br><br>
+	<label for="username">账号：<input type="number" name="usernum" id="usernum" min="1" max="120" step="1"><br><br>
 	<label for="password">密码：<input type="password" name="password" id="password"><br><br>
 	<button type="submit">提交</button>
 	<button type="reset">重置</button><br><br>

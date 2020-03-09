@@ -21,16 +21,23 @@
 		<legend>基本信息</legend>
 			<label for="name">姓名:<input type="text" name="name" id="name"><br><br>
 			性别：
-			<select name="sex">
-				<option value="male">男<option>
-				<option value="female">女</option>
-			</select><br><br>
-			<label for="age">年龄：<input type="text" name="name" id="age"><br><br>
+			<label><input type="radio" name="sex" value="male"></label>
+			<label><input type="radio" name="sex" value="famale"></label>
+			<br><br>
+			
+			<fieldset>
+			<legend>出生日期</legend>
+				<label>年月：<input type="month" name="month"></label>
+				<label>日期：<input type="date" name="date"></label>
+				<label>星期：<input type="week" name="week"></label>
+				<label>时间：<input type="time" name="time"></label>
+			</fieldset>
 		</fieldset>
 		
 		<fieldset>
 		<legend>详细信息</legend><br>
-			<select name="hobit">您从事的职业：
+			1.您从事的职业：
+			<select name="hobit">
 				<optgroup label="计算机方面：">
 					<option>web开发</option>
 					<option>软件开发</option>
@@ -46,9 +53,34 @@
 					<option>.......</option>
 				</optgroup>
 			</select>
+			<br><br>
+			
+			2.您是通过什么渠道获取到我们软件的？<br>
+			朋友推荐：<input type="checkbox" name="channel[]" value="1">
+			应用商店：<input type="checkbox" name="channel[]" value="2">
+			百度广告：<input type="checkbox" name="channel[]" value="3">
+			其他：    <input type="checkbox" name="channel[]" value="4"> 
+			<br><br>
+			
+			3.您是什么时候加入我们大家庭的？
+			<label>年月：<input type="month" name="month"></label>
+				<label>日期：<input type="date" name="date"></label>
+				<label>星期：<input type="week" name="week"></label>
+				<label>时间：<input type="time" name="time"></label>
+				<br><br>
+			
+			
+			<label>4.您最喜欢的颜色是？<input type="color" name="color"></label>
+			<br><br>
+			
+			
+			<label>
+			5.你有多喜欢这个产品？
+			<input type="range" name="love" value="1" min="1" max="100" step="1">
+			</label><br><br>
 		</fieldset>
 		<br>
-		<button type="submit">提交</button>
+		<input type="submit" value="提交">
 	</form>
 </body>
 </html>
